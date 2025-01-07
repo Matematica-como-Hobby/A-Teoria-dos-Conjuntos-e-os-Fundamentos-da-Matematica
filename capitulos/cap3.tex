@@ -139,12 +139,16 @@
 		\item $x\subset y\to \bigcap y\subset \bigcap x$.
 	\end{enumerate}
 \end{exercicio}
-\begin{solucao}
-	\begin{enumerate}[label=(\alph{*})]
-		\item Dados $y\in x$ e $z\in\bigcap x$, temos que $\forall w((w\in x)\to(z\in w))$. Em particular, $z\in y$, logo $\bigcap x\subset y$.
-		\item Dado $z\in\bigcap y$, temos que $z$ é elemento de qualquer $w\in y$. Como $x\subset y$, os elementos de $x$ são também elementos de  $y$, logo $z$ é elemento de qualquer $w\in x$ em particular, portanto $z\in\bigcap x$. Desta forma $\bigcap y\subset\bigcap x$.
-	\end{enumerate}
-\end{solucao}
+
+\begin{enumerate}[label=(\alph{*})]
+	\item
+		\begin{description}
+			\item[Solução por Allan Kenedy] Dados $y\in x$ e $z\in\bigcap x$, temos que $\forall w((w\in x)\to(z\in w))$. Em particular, $z\in y$, logo $\bigcap x\subset y$. $\qed$
+			\item[Solução por Cloves Paiva] Seja $x$ um conjunto qualquer não vazio e $y$ um de seus elementos. Se $\bigcap x = \emptyset$ então $\bigcap x \subset y$ pelo Teorema 3.4. Caso contrário, escolha arbitrariamente um elemento $z$ de $\bigcap x$, então $z$ pertence a todos os elementos de $x$, desse modo, teremos $z \in y$ e, novamente, $\bigcap x \subset y$. $\qed$
+		\end{description}
+	\item Dado $z\in\bigcap y$, temos que $z$ é elemento de qualquer $w\in y$. Como $x\subset y$, os elementos de $x$ são também elementos de  $y$, logo $z$ é elemento de qualquer $w\in x$ em particular, portanto $z\in\bigcap x$. Desta forma $\bigcap y\subset\bigcap x$.
+\end{enumerate}
+
 
 \begin{exercicio}
 	Escreva na linguagem da lógica de primeira ordem, sem abreviaturas, a seguinte fórmula:
