@@ -41,23 +41,18 @@
 		\item Prove que o conjunto $x$ existe.
 	\end{enumerate}
 \end{exercicio}
-\begin{solucao}
-	\begin{enumerate}[label=(\alph{*})]
-		\item 3 elementos.
-		\item $\emptyset,\{\emptyset\},\{\{\emptyset,\{\emptyset\}\}\},\{\emptyset,\{\emptyset\}\},\{\{\emptyset,\{\emptyset,\{\emptyset\}\}\}\},\{\emptyset,\{\emptyset,\{\emptyset\}\}\},\{\emptyset,\{\emptyset\},\{\emptyset,\{\emptyset\}\}\}\}$.
-		\item $\{\emptyset,\{\emptyset\},\{\{\emptyset,\{\emptyset\}\}\},\{\emptyset,\{\emptyset\}\},\{\{\emptyset,\{\emptyset,\{\emptyset\}\}\}\},\{\emptyset,\{\emptyset,\{\emptyset\}\}\},\{\emptyset,\{\emptyset\},\{\emptyset,\{\emptyset\}\}\}\}\}$.
-		\item 8 elementos.
-		\item 
-		\begin{description}
-			\item[Solução por Allan Kenedy:] Pelo axioma do vazio, existe $\emptyset$. Pelo axioma das partes, existe $\mathcal{P}(\emptyset)=\{\emptyset,\{\emptyset\}\}$, e então $x=\mathcal{P}(\emptyset)\cup\{\mathcal{P}(\emptyset)\}=\{\emptyset,\{\emptyset\},\{\emptyset,\{\emptyset\}\}\}$ pelo Teorema 3.7.
-			\item[Solução por Cloves Paiva:] Peguemos do conjunto $\omega$, da definição 3.19, o elemento que é representante do número três, ou seja, $y = \{\emptyset, \{\emptyset\}, \{\emptyset, \{\emptyset\}\}\} \in \omega$. Pelo Axioma da Extensão, $x = y$.
-			\begin{flushleft}
-			\vspace{1em} % Adiciona um espaço para facilitar o preenchimento
-			\underline{\hspace{10cm}} % Espaço reservado para preencher manualmente
-			\end{flushleft}
-		\end{description}
-	\end{enumerate}
-\end{solucao}
+
+\begin{enumerate}[label=(\alph{*})]
+	\item 3 elementos.
+	\item $\emptyset,\{\emptyset\},\{\{\emptyset,\{\emptyset\}\}\},\{\emptyset,\{\emptyset\}\},\{\{\emptyset,\{\emptyset,\{\emptyset\}\}\}\},\{\emptyset,\{\emptyset,\{\emptyset\}\}\},\{\emptyset,\{\emptyset\},\{\emptyset,\{\emptyset\}\}\}\}$.
+	\item $\{\emptyset,\{\emptyset\},\{\{\emptyset,\{\emptyset\}\}\},\{\emptyset,\{\emptyset\}\},\{\{\emptyset,\{\emptyset,\{\emptyset\}\}\}\},\{\emptyset,\{\emptyset,\{\emptyset\}\}\},\{\emptyset,\{\emptyset\},\{\emptyset,\{\emptyset\}\}\}\}\}$.
+	\item 8 elementos.
+	\item 
+	\begin{description}
+		\item[Solução por Allan Kenedy:] Pelo axioma do vazio, existe $\emptyset$. Pelo axioma das partes, existe $\mathcal{P}(\emptyset)=\{\emptyset,\{\emptyset\}\}$, e então $x=\mathcal{P}(\emptyset)\cup\{\mathcal{P}(\emptyset)\}=\{\emptyset,\{\emptyset\},\{\emptyset,\{\emptyset\}\}\}$ pelo Teorema 3.7. $\qed$
+		\item[Solução por Cloves Paiva:] Peguemos do conjunto $\omega$, da definição 3.19, o elemento que é representante do número três, ou seja, $y = \{\emptyset, \{\emptyset\}, \{\emptyset, \{\emptyset\}\}\} \in \omega$. Pelo Axioma da Extensão, $x = y$. $\qed$ 
+	\end{description}
+\end{enumerate}
 
 \begin{exercicio}
 	Prove que para todos conjuntos $x$ e $y$
@@ -68,24 +63,36 @@
 		\item se $x\subset y$, então $\bigcup x\subset \bigcup y$.
 	\end{enumerate}
 \end{exercicio}
-\begin{solucao}
-	\begin{enumerate}[label=(\alph{*})]
-		\item Se $x$ não é vazio, todo elemento de $x$ é elemento de $x$, logo $x\subset x$. Se $x$ é vazio, como $\emptyset$ está contido em qualquer conjunto pelo Teorema 3.4, temos que $\emptyset\subset \emptyset$. Em qualquer caso, $x\subset x$.
-		\item Se $x\in y$, como $x$ é o único elemento do conjunto $\{x\}$, temos que $\{x\}\subset y$. Reciprocamente, se $\{x\}\subset y$, então $x\in y$.
-		\item Dado $u\in\bigcup\mathcal{P}(x)$, existe $x\in\mathcal{P}(x)$ tal que $u\in v$. Como $\mathcal{P}(x)$ é o conjunto de todos os subconjuntos de $x$, $v\subset x$, logo $u\in x$. Portanto $\bigcup\mathcal{P}(x)\subset x$.
-		
-		Reciprocamente, como $x\subset x$ pelo item (a), então $x\in\mathcal{P}(x)$, logo qualquer elemento $y\in x$ será elemento de $\bigcup\mathcal{P}(x)$, e assim $x\subset \bigcup\mathcal{P}(x)$.
-		
-		Pelo axioma da extensão, $\bigcup\mathcal{P}(x)=x$.
-		\item Dado $u\in\bigcup x$, existe $v\in x$ tal que $u\in v$. Como $x\subset y$, $v\in y$, logo $u\in\bigcup y$ e, portanto, $\bigcup x\subset\bigcup y$.
-	\end{enumerate}
-\end{solucao}
+
+\begin{enumerate}[label=(\alph{*})]
+	\item 
+		\begin{solucao} 
+			Se $x$ não é vazio, todo elemento de $x$ é elemento de $x$, logo $x\subset x$. Se $x$ é vazio, como $\emptyset$ está contido em qualquer conjunto pelo Teorema 3.4, temos que $\emptyset\subset \emptyset$. Em qualquer caso, $x\subset x$. 
+		\end{solucao}
+	\item 
+		\begin{solucao}
+			Se $x\in y$, como $x$ é o único elemento do conjunto $\{x\}$, temos que $\{x\}\subset y$. Reciprocamente, se $\{x\}\subset y$, então $x\in y$.
+		\end{solucao}
+	\item 
+		\begin{solucao}
+			Dado $u\in\bigcup\mathcal{P}(x)$, existe $v\in\mathcal{P}(x)$ tal que $u\in v$. Como $\mathcal{P}(x)$ é o conjunto de todos os subconjuntos de $x$, $v\subset x$, logo $u\in x$. Portanto $\bigcup\mathcal{P}(x)\subset x$.
+			
+			Reciprocamente, como $x\subset x$ pelo item (a), então $x\in\mathcal{P}(x)$, logo qualquer elemento $y\in x$ será elemento de $\bigcup\mathcal{P}(x)$, e assim $x\subset \bigcup\mathcal{P}(x)$.
+			
+			Pelo axioma da extensão, $\bigcup\mathcal{P}(x)=x$.
+		\end{solucao}
+	\item 
+		\begin{solucao}
+			Dado $u\in\bigcup x$, existe $v\in x$ tal que $u\in v$. Como $x\subset y$, $v\in y$, logo $u\in\bigcup y$ e, portanto, $\bigcup x\subset\bigcup y$.
+		\end{solucao}
+\end{enumerate}
+
 
 \begin{exercicio}
 	Escreva uma fórmula de primeira ordem, na linguagem da teoria dos conjuntos, com quatro variáveis livres, que represente o conjunto $\{x,y,z\}$.
 \end{exercicio}
 \begin{solucao}
-	content
+	$\forall w ((w \in u) \implies ((w=x) \vee (w=y) \vee (w=z)))$
 \end{solucao}
 
 \begin{exercicio}
