@@ -3,14 +3,14 @@
 \setcounter{ex}{0}
 
 \begin{exercicio}
-	Usando o axioma da extens�o, prove que $\{\emptyset\}$ e $\{\{\emptyset\}\}$ s�o conjuntos diferentes.
+	Usando o axioma da extensão, prove que $\{\emptyset\}$ e $\{\{\emptyset\}\}$ são conjuntos diferentes.
 \end{exercicio}
 \begin{solucao}
-	O conjunto $\{\emptyset\}$ tem como �nico elemento $\emptyset$, enquanto $\{\{\emptyset\}\}$ tem como �nico elemento $\{\emptyset\}$. Como $\emptyset\neq\{\emptyset\}$, segue do axioma da extens�o que $\{\emptyset\}$ e $\{\{\emptyset\}\}$ s�o conjuntos distintos.
+	O conjunto $\{\emptyset\}$ tem como único elemento $\emptyset$, enquanto $\{\{\emptyset\}\}$ tem como único elemento $\{\emptyset\}$. Como $\emptyset\neq\{\emptyset\}$, segue do axioma da extensão que $\{\emptyset\}$ e $\{\{\emptyset\}\}$ são conjuntos distintos.
 \end{solucao}
 
 \begin{exercicio}
-	Para cada par de conjuntos abaixo, decida qual(is) dos s�mbolos $\in$ e $\subset$ torna(m) a f�rmula verdadeira (assumindo que esses conjuntos existem). Lembre-se de que a resposta tamb�m pode ser ambos os s�mbolos ou nenhum deles. Justifique cada resposta.
+	Para cada par de conjuntos abaixo, decida qual(is) dos símbolos $\in$ e $\subset$ torna(m) a fórmula verdadeira (assumindo que esses conjuntos existem). Lembre-se de que a resposta também pode ser ambos os símbolos ou nenhum deles. Justifique cada resposta.
 	\begin{enumerate}[label=(\alph{*})]
 		\item $\{\emptyset\}\ldots\{\emptyset,\{\emptyset\}\}$
 		\item $\{\emptyset\}\ldots\{\{\emptyset\}\}$
@@ -24,10 +24,10 @@
 	\begin{enumerate}[label=(\alph{*})]
 		\item $\{\emptyset\}\in\{\emptyset,\{\emptyset\}\}$ e $\{\emptyset\}\subset\{\emptyset,\{\emptyset\}\}$.
 		\item $\{\emptyset\}\in\{\{\emptyset\}\}$.
-		\item N�o vale $\in$ nem $\subset$.
+		\item Não vale $\in$ nem $\subset$.
 		\item $\{1,2,3\}\in\{\{1\},\{1,2\},\{1,2,3\}\}$.
 		\item $\{1,2\}\subset\{1,\{1\},2,\{2\},\{3\}\}$.
-		\item N�o vale $\in$ nem $\subset$.
+		\item Não vale $\in$ nem $\subset$.
 	\end{enumerate}
 \end{solucao}
 
@@ -36,7 +36,7 @@
 	\begin{enumerate}[label=(\alph{*})]
 		\item Quantos elementos tem o conjunto $x$?
 		\item Descreva todos os subconjuntos de $x$.
-		\item Descreva, usando chaves e v�rgula, o conjunto de todos os subconjuntos de $x$.
+		\item Descreva, usando chaves e vírgula, o conjunto de todos os subconjuntos de $x$.
 		\item Quantos elementos o conjunto dos subconjuntos de $x$ possui?
 		\item Prove que o conjunto $x$ existe.
 	\end{enumerate}
@@ -47,7 +47,15 @@
 		\item $\emptyset,\{\emptyset\},\{\{\emptyset,\{\emptyset\}\}\},\{\emptyset,\{\emptyset\}\},\{\{\emptyset,\{\emptyset,\{\emptyset\}\}\}\},\{\emptyset,\{\emptyset,\{\emptyset\}\}\},\{\emptyset,\{\emptyset\},\{\emptyset,\{\emptyset\}\}\}\}$.
 		\item $\{\emptyset,\{\emptyset\},\{\{\emptyset,\{\emptyset\}\}\},\{\emptyset,\{\emptyset\}\},\{\{\emptyset,\{\emptyset,\{\emptyset\}\}\}\},\{\emptyset,\{\emptyset,\{\emptyset\}\}\},\{\emptyset,\{\emptyset\},\{\emptyset,\{\emptyset\}\}\}\}\}$.
 		\item 8 elementos.
-		\item Pelo axioma do vazio, existe $\emptyset$. Pelo axioma das partes, existe $\mathcal{P}(\emptyset)=\{\emptyset,\{\emptyset\}\}$, e ent�o $x=\mathcal{P}(\emptyset)\cup\{\mathcal{P}(\emptyset)\}=\{\emptyset,\{\emptyset\},\{\emptyset,\{\emptyset\}\}\}$ pelo Teorema 3.7.
+		\item 
+		\begin{description}
+			\item[Solução por Allan Kenedy:] Pelo axioma do vazio, existe $\emptyset$. Pelo axioma das partes, existe $\mathcal{P}(\emptyset)=\{\emptyset,\{\emptyset\}\}$, e então $x=\mathcal{P}(\emptyset)\cup\{\mathcal{P}(\emptyset)\}=\{\emptyset,\{\emptyset\},\{\emptyset,\{\emptyset\}\}\}$ pelo Teorema 3.7.
+			\item[Solução por Cloves Paiva:] Peguemos do conjunto $\omega$, da definição 3.19, o elemento que é representante do número três, ou seja, $y = \{\emptyset, \{\emptyset\}, \{\emptyset, \{\emptyset\}\}\} \in \omega$. Pelo Axioma da Extensão, $x = y$.
+			\begin{flushleft}
+			\vspace{1em} % Adiciona um espaço para facilitar o preenchimento
+			\underline{\hspace{10cm}} % Espaço reservado para preencher manualmente
+			\end{flushleft}
+		\end{description}
 	\end{enumerate}
 \end{solucao}
 
@@ -57,24 +65,24 @@
 		\item $x\subset x$;
 		\item $x\in y$ se, e somente se, $\{x\}\subset y$;
 		\item $\bigcup\mathcal{P}(x)=x$;
-		\item se $x\subset y$, ent�o $\bigcup x\subset \bigcup y$.
+		\item se $x\subset y$, então $\bigcup x\subset \bigcup y$.
 	\end{enumerate}
 \end{exercicio}
 \begin{solucao}
 	\begin{enumerate}[label=(\alph{*})]
-		\item Se $x$ n�o � vazio, todo elemento de $x$ � elemento de $x$, logo $x\subset x$. Se $x$ � vazio, como $\emptyset$ est� contido em qualquer conjunto pelo Teorema 3.4, temos que $\emptyset\subset \emptyset$. Em qualquer caso, $x\subset x$.
-		\item Se $x\in y$, como $x$ � o �nico elemento do conjunto $\{x\}$, temos que $\{x\}\subset y$. Reciprocamente, se $\{x\}\subset y$, ent�o $x\in y$.
-		\item Dado $u\in\bigcup\mathcal{P}(x)$, existe $x\in\mathcal{P}(x)$ tal que $u\in v$. Como $\mathcal{P}(x)$ � o conjunto de todos os subconjuntos de $x$, $v\subset x$, logo $u\in x$. Portanto $\bigcup\mathcal{P}(x)\subset x$.
+		\item Se $x$ não é vazio, todo elemento de $x$ é elemento de $x$, logo $x\subset x$. Se $x$ é vazio, como $\emptyset$ está contido em qualquer conjunto pelo Teorema 3.4, temos que $\emptyset\subset \emptyset$. Em qualquer caso, $x\subset x$.
+		\item Se $x\in y$, como $x$ é o único elemento do conjunto $\{x\}$, temos que $\{x\}\subset y$. Reciprocamente, se $\{x\}\subset y$, então $x\in y$.
+		\item Dado $u\in\bigcup\mathcal{P}(x)$, existe $x\in\mathcal{P}(x)$ tal que $u\in v$. Como $\mathcal{P}(x)$ é o conjunto de todos os subconjuntos de $x$, $v\subset x$, logo $u\in x$. Portanto $\bigcup\mathcal{P}(x)\subset x$.
 		
-		Reciprocamente, como $x\subset x$ pelo item (a), ent�o $x\in\mathcal{P}(x)$, logo qualquer elemento $y\in x$ ser� elemento de $\bigcup\mathcal{P}(x)$, e assim $x\subset \bigcup\mathcal{P}(x)$.
+		Reciprocamente, como $x\subset x$ pelo item (a), então $x\in\mathcal{P}(x)$, logo qualquer elemento $y\in x$ será elemento de $\bigcup\mathcal{P}(x)$, e assim $x\subset \bigcup\mathcal{P}(x)$.
 		
-		Pelo axioma da extens�o, $\bigcup\mathcal{P}(x)=x$.
+		Pelo axioma da extensão, $\bigcup\mathcal{P}(x)=x$.
 		\item Dado $u\in\bigcup x$, existe $v\in x$ tal que $u\in v$. Como $x\subset y$, $v\in y$, logo $u\in\bigcup y$ e, portanto, $\bigcup x\subset\bigcup y$.
 	\end{enumerate}
 \end{solucao}
 
 \begin{exercicio}
-	Escreva uma f�rmula de primeira ordem, na linguagem da teoria dos conjuntos, com quatro vari�veis livres, que represente o conjunto $\{x,y,z\}$.
+	Escreva uma fórmula de primeira ordem, na linguagem da teoria dos conjuntos, com quatro variáveis livres, que represente o conjunto $\{x,y,z\}$.
 \end{exercicio}
 \begin{solucao}
 	content
@@ -95,12 +103,12 @@
 \end{solucao}
 
 \begin{exercicio}
-	Prove que n�o existe o conjunto de todos os conjuntos unit�rios.
+	Prove que não existe o conjunto de todos os conjuntos unitários.
 	
-	\emph{Dica:} Assuma, por absurdo, a exist�ncia do conjunto de todos os conjuntos unit�rios e prove a exist�ncia do conjunto de todos os conjuntos.
+	\emph{Dica:} Assuma, por absurdo, a existência do conjunto de todos os conjuntos unitários e prove a existência do conjunto de todos os conjuntos.
 \end{exercicio}
 \begin{solucao}
-	Suponha que existe $x$ tal que $\forall y(\{y\}\in x)$. Ent�o $\{x\}\in x$. Como $x\in\{x\}$, temos uma contradi��o com o Teorema 3.14. Portanto $\nexists x\forall y(\{y\}\in x)$.
+	Suponha que existe $x$ tal que $\forall y(\{y\}\in x)$. Então $\{x\}\in x$. Como $x\in\{x\}$, temos uma contradição com o Teorema 3.14. Portanto $\nexists x\forall y(\{y\}\in x)$.
 \end{solucao}
 
 \begin{exercicio}
@@ -108,11 +116,11 @@
 	$$\{\{x\}:x\in X\}$$
 \end{exercicio}
 \begin{solucao}
-	Pelo axioma das partes, existe o conjunto $\mathcal{P}(X)$. Para cada $x\in X$, temos que $\{x\}\subset X$, logo $\{x\}\in\mathcal{P}(X)$. Pelo axioma da separa��o, existe o conjunto $\{y\in \mathcal{P}(X):\exists x((x\in X)\wedge(\{x\}=y))\}$, que, via axioma da extens�o, � o conjunto procurado.
+	Pelo axioma das partes, existe o conjunto $\mathcal{P}(X)$. Para cada $x\in X$, temos que $\{x\}\subset X$, logo $\{x\}\in\mathcal{P}(X)$. Pelo axioma da separação, existe o conjunto $\{y\in \mathcal{P}(X):\exists x((x\in X)\wedge(\{x\}=y))\}$, que, via axioma da extensão, é o conjunto procurado.
 \end{solucao}
 
 \begin{exercicio}
-	Sendo $x$ um conjunto n�o vazio, prove que
+	Sendo $x$ um conjunto não vazio, prove que
 	\begin{enumerate}[label=(\alph{*})]
 		\item $\forall y(y\in x\to(\bigcap x\subset y))$;
 		\item $x\subset y\to \bigcap y\subset \bigcap x$.
@@ -121,12 +129,12 @@
 \begin{solucao}
 	\begin{enumerate}[label=(\alph{*})]
 		\item Dados $y\in x$ e $z\in\bigcap x$, temos que $\forall w((w\in x)\to(z\in w))$. Em particular, $z\in y$, logo $\bigcap x\subset y$.
-		\item Dado $z\in\bigcap y$, temos que $z$ � elemento de qualquer $w\in y$. Como $x\subset y$, os elementos de $x$ s�o tamb�m elementos de  $y$, logo $z$ � elemento de qualquer $w\in x$ em particular, portanto $z\in\bigcap x$. Desta forma $\bigcap y\subset\bigcap x$.
+		\item Dado $z\in\bigcap y$, temos que $z$ é elemento de qualquer $w\in y$. Como $x\subset y$, os elementos de $x$ são também elementos de  $y$, logo $z$ é elemento de qualquer $w\in x$ em particular, portanto $z\in\bigcap x$. Desta forma $\bigcap y\subset\bigcap x$.
 	\end{enumerate}
 \end{solucao}
 
 \begin{exercicio}
-	Escreva na linguagem da l�gica de primeira ordem, sem abreviaturas, a seguinte f�rmula:
+	Escreva na linguagem da lógica de primeira ordem, sem abreviaturas, a seguinte fórmula:
 	$$x\in\bigcup\bigcap(y\cup(w\backslash z)).$$
 \end{exercicio}
 \begin{solucao}
@@ -136,26 +144,26 @@
 \begin{exercicio}
 	Usando o axioma da regularidade, prove que:
 	\begin{enumerate}[label=(\alph{*})]
-		\item n�o existem $x,y,z$ tais que $x\in y,y\in z$ e $z\in x$;
-		\item n�o existem $w,x,y,z$ tais que $w\in x,x\in y,y\in z$ e $z\in w$.
+		\item não existem $x,y,z$ tais que $x\in y,y\in z$ e $z\in x$;
+		\item não existem $w,x,y,z$ tais que $w\in x,x\in y,y\in z$ e $z\in w$.
 	\end{enumerate}
 \end{exercicio}
 \begin{solucao}
 	\begin{enumerate}[label=(\alph{*})]
-		\item Pelo axioma do par, existem $\{x,y\}$ e $\{y,z\}$. Tome $w=\{x,y\}\bigcup \{y,z\}=\{x,y,z\}$. Pelo axioma da regularidade, existe $u\in w$ tal que $u\cap w=\emptyset$. Se for $u=x$, ent�o $y\notin x$ e $z\notin x$. Se for $u=y$, ent�o $x\notin y$ e $z\notin y$. Se for $u=z$, ent�o $x\notin z$ e $y\notin z$. Em qualquer caso, n�o podemos ter $x\in y$, $y\in z$ e $z\in x$ simultaneamente.
+		\item Pelo axioma do par, existem $\{x,y\}$ e $\{y,z\}$. Tome $w=\{x,y\}\bigcup \{y,z\}=\{x,y,z\}$. Pelo axioma da regularidade, existe $u\in w$ tal que $u\cap w=\emptyset$. Se for $u=x$, então $y\notin x$ e $z\notin x$. Se for $u=y$, então $x\notin y$ e $z\notin y$. Se for $u=z$, então $x\notin z$ e $y\notin z$. Em qualquer caso, não podemos ter $x\in y$, $y\in z$ e $z\in x$ simultaneamente.
 		\item Basta repetir o argumento acima para o conjunto $\{w,x,y,z\}$.
 	\end{enumerate}
 \end{solucao}
 
 \begin{exercicio}
-	Prove que n�o existe $x$ tal que $\mathcal{P}(x)=x$.
+	Prove que não existe $x$ tal que $\mathcal{P}(x)=x$.
 \end{exercicio}
 \begin{solucao}
-	Se $\mathcal{P}(x)=x$, como $x\subset x$, ent�o $x\in \mathcal{P}(x)$, contradizendo o Corol�rio 3.15.
+	Se $\mathcal{P}(x)=x$, como $x\subset x$, então $x\in \mathcal{P}(x)$, contradizendo o Corolário 3.15.
 \end{solucao}
 
 \begin{exercicio}
-	Escreva o conjunto $\mathcal{P}(3\backslash 1)$, utilizando apenas os seguintes s�mbolos: as chaves, a v�rgula e o s�mbolo de conjunto vazio.
+	Escreva o conjunto $\mathcal{P}(3\backslash 1)$, utilizando apenas os seguintes símbolos: as chaves, a vírgula e o símbolo de conjunto vazio.
 \end{exercicio}
 \begin{solucao}
 	$\mathcal{P}(3\backslash 1)=\{\emptyset,\{\emptyset\},\{\{\emptyset,\{\emptyset\}\}\},\{\emptyset,\{\emptyset,\{\emptyset\}\}\}\}$.
@@ -164,29 +172,29 @@
 \begin{exercicio}
 	Prove, a partir dos axiomas de Peano, os seguintes teoremas:
 	\begin{enumerate}[label=(\alph{*})]
-		\item Todo n�mero natural � diferente do seu sucessor.
-		\item Zero � o �nico n�mero natural que n�o � sucessor de nenhum n�mero natural.
+		\item Todo número natural é diferente do seu sucessor.
+		\item Zero é o único número natural que não é sucessor de nenhum número natural.
 	\end{enumerate}
 \end{exercicio}
 \begin{solucao}
 	\begin{enumerate}[label=(\alph{*})]
 		\item Tese: $\forall n((n\in\omega)\wedge(n\neq n^+))$.
 		
-		Para $n=0$, $n^+\neq0$, pois $0$ n�o � sucessor de nenhum n�mero natural, logo a tese � verdadeira para $n=0$.
+		Para $n=0$, $n^+\neq0$, pois $0$ não é sucessor de nenhum número natural, logo a tese é verdadeira para $n=0$.
 		
-		Suponha que a tese � verdadeira para algum $n\in\omega$. Pelo axioma 3, $n$ e $n^+$ devem ter sucessores distintos, isto �, $n^+\neq(n^+)^+$. Isto mostra que a tese � verdadeira para $n^+$. Pelo axioma 5, a tese � verdadeira para todo $n$ natural.
+		Suponha que a tese é verdadeira para algum $n\in\omega$. Pelo axioma 3, $n$ e $n^+$ devem ter sucessores distintos, isto é, $n^+\neq(n^+)^+$. Isto mostra que a tese é verdadeira para $n^+$. Pelo axioma 5, a tese é verdadeira para todo $n$ natural.
 		
 		\item Tese: $\forall n((n\in\omega)\wedge\nexists m((m\in\omega)\wedge(m^+=n))\to(n=0))$.
 		
 		Contrapositiva: $\forall n((n\neq0)\to((n\notin\omega)\vee\exists m((m\in\omega)\wedge(m^+=n))))$.
 		
-		Demonstraremos a contrapositiva, por ser equivalente � tese. Para isto precisaremos da seguinte proposi��o.
+		Demonstraremos a contrapositiva, por ser equivalente à tese. Para isto precisaremos da seguinte proposição.
 		
-		\textbf{Proposi��o:} Seja $\sigma$ um subconjunto n�o vazio de $\omega$. Se $0\in\sigma$ e, para cada $n\in\sigma$, valer $n^+\in\sigma$, ent�o $\sigma=\omega$.
+		\textbf{Proposição:} Seja $\sigma$ um subconjunto não vazio de $\omega$. Se $0\in\sigma$ e, para cada $n\in\sigma$, valer $n^+\in\sigma$, então $\sigma=\omega$.
 		
-		\textbf{Prova:} Aplicando o axioma 5 � f�rmula $P(\sigma)=(x\in\sigma)$, obtemos $\omega\subset \sigma$. Como $\sigma\subset \omega$, ent�o $\sigma=\omega$.\hfill$\blacksquare$
+		\textbf{Prova:} Aplicando o axioma 5 à fórmula $P(\sigma)=(x\in\sigma)$, obtemos $\omega\subset \sigma$. Como $\sigma\subset \omega$, então $\sigma=\omega$.\hfill$\blacksquare$
 		
-		Seja $\sigma=\{0\}\cup\{n\in\omega:\exists m((m\in\omega)\wedge(m^+=n))\}$. Temos que $0\in\sigma$ e, para cada $n\in\sigma$, $n^+\in\sigma$. Pela proposi��o acima, $\sigma=\omega$. Pelo axioma 4, $\{0\}\cap\{n\in\omega:\exists m((m\in\omega)\wedge(m^+=n))\}=\emptyset$. Portanto, para qualquer $n\in\omega$ com $n\neq0$, $\exists m((m\in\omega)\wedge(m^+=n))$. Isto demonstra, por contraposi��o, a tese.
+		Seja $\sigma=\{0\}\cup\{n\in\omega:\exists m((m\in\omega)\wedge(m^+=n))\}$. Temos que $0\in\sigma$ e, para cada $n\in\sigma$, $n^+\in\sigma$. Pela proposição acima, $\sigma=\omega$. Pelo axioma 4, $\{0\}\cap\{n\in\omega:\exists m((m\in\omega)\wedge(m^+=n))\}=\emptyset$. Portanto, para qualquer $n\in\omega$ com $n\neq0$, $\exists m((m\in\omega)\wedge(m^+=n))$. Isto demonstra, por contraposição, a tese.
 	\end{enumerate}
 \end{solucao}
 
@@ -194,26 +202,26 @@
 	Prove que:
 	\begin{enumerate}[label=(\alph{*})]
 		\item para todo $n\in\omega$, $\emptyset\in n$ ou $\emptyset=n$;
-		\item para todos $n,m\in\omega$, se $m\in n$, ent�o $m\subset n$.
+		\item para todos $n,m\in\omega$, se $m\in n$, então $m\subset n$.
 	\end{enumerate}
 \end{exercicio}
 \begin{solucao}
 	\begin{enumerate}[label=(\alph{*})]
-		\item Para $n=0$, $n=\emptyset$, logo a tese � verdadeira.
+		\item Para $n=0$, $n=\emptyset$, logo a tese é verdadeira.
 		
-		Suponha ser verdade para $n$. Se $\emptyset=n$, ent�o $\emptyset\in n^+=n\cup\{n\}$. Se $\emptyset\in n$, ent�o $\emptyset\in n^+$, e a tese � verdadeira para $n^+$
+		Suponha ser verdade para $n$. Se $\emptyset=n$, então $\emptyset\in n^+=n\cup\{n\}$. Se $\emptyset\in n$, então $\emptyset\in n^+$, e a tese é verdadeira para $n^+$
 		
 		Pelo axioma 5, $\emptyset\in n$ ou $\emptyset=n$ para qualquer $n\in\omega$.
-		\item J� feito na prova do Teorema 3.21, item (c).
+		\item Já feito na prova do Teorema 3.21, item (c).
 	\end{enumerate}
 \end{solucao}
 
 \begin{exercicio}
-	A uni�o de dois conjuntos indutivos � necessariamente um conjunto indutivo? Justifique sua resposta.
+	A união de dois conjuntos indutivos é necessariamente um conjunto indutivo? Justifique sua resposta.
 \end{exercicio}
 \begin{solucao}
 	
 	\underline{Resposta:} Sim.
 	
-	\underline{Justificativa:} Sejam $A$ e $B$ dois conjuntos indutivos. Como $\emptyset\in A$ e $\emptyset\in B$, ent�o $\emptyset\in A\cup B$. Se $x\in A\cup B$, ent�o $x\in A$ ou $x\in B$, logo $x^+\in A$ ou $x^+\in B$, o que implica $x^+\in A\cup B$. Isto mostra que $A\cup B$ � indutivo.
+	\underline{Justificativa:} Sejam $A$ e $B$ dois conjuntos indutivos. Como $\emptyset\in A$ e $\emptyset\in B$, então $\emptyset\in A\cup B$. Se $x\in A\cup B$, então $x\in A$ ou $x\in B$, logo $x^+\in A$ ou $x^+\in B$, o que implica $x^+\in A\cup B$. Isto mostra que $A\cup B$ é indutivo.
 \end{solucao}
