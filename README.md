@@ -10,7 +10,8 @@
 ## Objetivo
 Resolver todos os exercícios do livro [A Teoria dos Conjuntos e os Fundamentos da Matemática](https://amzn.to/406QnFf) de *Rogério Augusto dos Santos Fajardo*.
 
-## Capitulos feitos
-- capitulo 1
-- capitulo 2
+## Capítulos feitos
+- capítulo 1
+- capítulo 2
+- capítulo 3
 
