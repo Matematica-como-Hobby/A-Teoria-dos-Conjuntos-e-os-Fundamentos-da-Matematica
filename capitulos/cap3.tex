@@ -20,16 +20,16 @@
 		\item $\{\{1\},\{2\}\}\ldots\{\{1,2\}\}$
 	\end{enumerate}
 \end{exercicio}
-\begin{solucao}
-	\begin{enumerate}[label=(\alph{*})]
-		\item $\{\emptyset\}\in\{\emptyset,\{\emptyset\}\}$ e $\{\emptyset\}\subset\{\emptyset,\{\emptyset\}\}$.
-		\item $\{\emptyset\}\in\{\{\emptyset\}\}$.
-		\item Não vale $\in$ nem $\subset$.
-		\item $\{1,2,3\}\in\{\{1\},\{1,2\},\{1,2,3\}\}$.
-		\item $\{1,2\}\subset\{1,\{1\},2,\{2\},\{3\}\}$.
-		\item Não vale $\in$ nem $\subset$.
-	\end{enumerate}
-\end{solucao}
+
+\begin{enumerate}[label=(\alph{*})]
+	\item $\{\emptyset\}\in\{\emptyset,\{\emptyset\}\}$ e $\{\emptyset\}\subset\{\emptyset,\{\emptyset\}\}$.
+	\item $\{\emptyset\}\in\{\{\emptyset\}\}$.
+	\item Não vale $\in$ nem $\subset$.
+	\item $\{1,2,3\}\in\{\{1\},\{1,2\},\{1,2,3\}\}$.
+	\item $\{1,2\}\subset\{1,\{1\},2,\{2\},\{3\}\}$.
+	\item Não vale $\in$ nem $\subset$.
+\end{enumerate}
+
 
 \begin{exercicio}
 	Seja $x$ o conjunto $\{\emptyset,\{\emptyset\},\emptyset,\{\emptyset,\{\emptyset\}\}\}$.
@@ -102,21 +102,27 @@
 		\item $\mathcal{P}(\{\emptyset,\{\emptyset\}\})$.
 	\end{enumerate}
 \end{exercicio}
-\begin{solucao}
-	\begin{enumerate}[label=(\alph{*})]
-		\item $\{0,1,\{1\},2,\{1,2\}\}$.
-		\item $\{\emptyset,\{\emptyset\},\{\{\emptyset\}\},\{\emptyset,\{\emptyset\}\}\}$.
-	\end{enumerate}
-\end{solucao}
+
+\begin{enumerate}[label=(\alph{*})]
+	\item $\{0,1,\{1\},2,\{1,2\}\}$.
+	\item $\{\emptyset,\{\emptyset\},\{\{\emptyset\}\},\{\emptyset,\{\emptyset\}\}\}$.
+\end{enumerate}
+
 
 \begin{exercicio}
 	Prove que não existe o conjunto de todos os conjuntos unitários.
 	
 	\emph{Dica:} Assuma, por absurdo, a existência do conjunto de todos os conjuntos unitários e prove a existência do conjunto de todos os conjuntos.
 \end{exercicio}
-\begin{solucao}
+
+\begin{proof}[Solução por Allan Kenedy:]
 	Suponha que existe $x$ tal que $\forall y(\{y\}\in x)$. Então $\{x\}\in x$. Como $x\in\{x\}$, temos uma contradição com o Teorema 3.14. Portanto $\nexists x\forall y(\{y\}\in x)$.
-\end{solucao}
+\end{proof}
+	
+\begin{proof}[Solução por Cloves Paiva:]
+	Suponha, por absurdo, que $u$ seja o conjunto de todos os conjuntos unitários. Seja $x$ um conjunto arbitrário, então $\{x\} \in u$ por hipótese e, pelo Axioma da União, teremos $x \in \bigcup x$. Isso faz de $\bigcup x$ o cojunto de todos os conjuntos, o que é um absurdo pelo Teorema 3.10.
+\end{proof}
+	
 
 \begin{exercicio}
 	Prove que para todo conjunto $X$ existe o conjunto
