@@ -115,11 +115,11 @@
 	\emph{Dica:} Assuma, por absurdo, a existência do conjunto de todos os conjuntos unitários e prove a existência do conjunto de todos os conjuntos.
 \end{exercicio}
 
-\begin{proof}[Solução por Allan Kenedy:]
+\begin{proof}[\textbf{Solução por Allan Kenedy}:]
 	Suponha que existe $x$ tal que $\forall y(\{y\}\in x)$. Então $\{x\}\in x$. Como $x\in\{x\}$, temos uma contradição com o Teorema 3.14. Portanto $\nexists x\forall y(\{y\}\in x)$.
 \end{proof}
 	
-\begin{proof}[Solução por Cloves Paiva:]
+\begin{proof}[\textbf{Solução por Cloves Paiva}:]
 	Suponha, por absurdo, que $u$ seja o conjunto de todos os conjuntos unitários. Seja $x$ um conjunto arbitrário, então $\{x\} \in u$ por hipótese e, pelo Axioma da União, teremos $x \in \bigcup x$. Isso faz de $\bigcup x$ o cojunto de todos os conjuntos, o que é um absurdo pelo Teorema 3.10.
 \end{proof}
 	
@@ -175,9 +175,12 @@
 \begin{exercicio}
 	Prove que não existe $x$ tal que $\mathcal{P}(x)=x$.
 \end{exercicio}
-\begin{solucao}
+\begin{proof}[\textbf{Solução por Allan Kenedy}:]
 	Se $\mathcal{P}(x)=x$, como $x\subset x$, então $x\in \mathcal{P}(x)$, contradizendo o Corolário 3.15.
-\end{solucao}
+\end{proof}
+\begin{proof}[\textbf{Solução por Cloves Paiva}:]
+	Suponha que $x$ seja um conjunto tal que $\mathcal{P}(x)=x$. Seja $y$ um elemento qualquer de $x$, então também teremos $y \subset x$, dado que assumimos $\mathcal{P}(x)=x$, e portanto $x \cap y \neq \emptyset$, o que é um absurdo pelo Axioma da Regularidade.
+\end{proof}
 
 \begin{exercicio}
 	Escreva o conjunto $\mathcal{P}(3\backslash 1)$, utilizando apenas os seguintes símbolos: as chaves, a vírgula e o símbolo de conjunto vazio.
