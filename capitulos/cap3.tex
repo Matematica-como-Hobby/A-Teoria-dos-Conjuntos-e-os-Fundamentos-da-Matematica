@@ -49,8 +49,8 @@
 	\item 8 elementos.
 	\item 
 	\begin{description}
-		\item[Solução por Allan Kenedy:] Pelo axioma do vazio, existe $\emptyset$. Pelo axioma das partes, existe $\mathcal{P}(\emptyset)=\{\emptyset,\{\emptyset\}\}$, e então $x=\mathcal{P}(\emptyset)\cup\{\mathcal{P}(\emptyset)\}=\{\emptyset,\{\emptyset\},\{\emptyset,\{\emptyset\}\}\}$ pelo Teorema 3.7. $\qed$
-		\item[Solução por Cloves Paiva:] Peguemos do conjunto $\omega$, da definição 3.19, o elemento que é representante do número três, ou seja, $y = \{\emptyset, \{\emptyset\}, \{\emptyset, \{\emptyset\}\}\} \in \omega$. Pelo Axioma da Extensão, $x = y$. $\qed$ 
+		\item[Solução 1:] Pelo axioma do vazio, existe $\emptyset$. Pelo axioma das partes, existe $\mathcal{P}(\emptyset)=\{\emptyset,\{\emptyset\}\}$, e então $x=\mathcal{P}(\emptyset)\cup\{\mathcal{P}(\emptyset)\}=\{\emptyset,\{\emptyset\},\{\emptyset,\{\emptyset\}\}\}$ pelo Teorema 3.7. $\qed$
+		\item[Solução 2:] Peguemos do conjunto $\omega$, da definição 3.19, o elemento que é representante do número três, ou seja, $y = \{\emptyset, \{\emptyset\}, \{\emptyset, \{\emptyset\}\}\} \in \omega$. Pelo Axioma da Extensão, $x = y$. $\qed$ 
 	\end{description}
 \end{enumerate}
 
@@ -115,11 +115,11 @@
 	\emph{Dica:} Assuma, por absurdo, a existência do conjunto de todos os conjuntos unitários e prove a existência do conjunto de todos os conjuntos.
 \end{exercicio}
 
-\begin{proof}[\textbf{Solução por Allan Kenedy}:]
+\begin{proof}[\textbf{Solução 1}:]
 	Suponha que existe $x$ tal que $\forall y(\{y\}\in x)$. Então $\{x\}\in x$. Como $x\in\{x\}$, temos uma contradição com o Teorema 3.14. Portanto $\nexists x\forall y(\{y\}\in x)$.
 \end{proof}
 	
-\begin{proof}[\textbf{Solução por Cloves Paiva}:]
+\begin{proof}[\textbf{Solução 2}:]
 	Suponha, por absurdo, que $u$ seja o conjunto de todos os conjuntos unitários. Seja $x$ um conjunto arbitrário, então $\{x\} \in u$ por hipótese e, pelo Axioma da União, teremos $x \in \bigcup x$. Isso faz de $\bigcup x$ o cojunto de todos os conjuntos, o que é um absurdo pelo Teorema 3.10.
 \end{proof}
 	
@@ -143,8 +143,8 @@
 \begin{enumerate}[label=(\alph{*})]
 	\item
 		\begin{description}
-			\item[Solução por Allan Kenedy] Dados $y\in x$ e $z\in\bigcap x$, temos que $\forall w((w\in x)\to(z\in w))$. Em particular, $z\in y$, logo $\bigcap x\subset y$. $\qed$
-			\item[Solução por Cloves Paiva] Seja $x$ um conjunto qualquer não vazio e $y$ um de seus elementos. Se $\bigcap x = \emptyset$ então $\bigcap x \subset y$ pelo Teorema 3.4. Caso contrário, escolha arbitrariamente um elemento $z$ de $\bigcap x$, então $z$ pertence a todos os elementos de $x$, desse modo, teremos $z \in y$ e, novamente, $\bigcap x \subset y$. $\qed$
+			\item[Solução 1] Dados $y\in x$ e $z\in\bigcap x$, temos que $\forall w((w\in x)\to(z\in w))$. Em particular, $z\in y$, logo $\bigcap x\subset y$. $\qed$
+			\item[Solução 2] Seja $x$ um conjunto qualquer não vazio e $y$ um de seus elementos. Se $\bigcap x = \emptyset$ então $\bigcap x \subset y$ pelo Teorema 3.4. Caso contrário, escolha arbitrariamente um elemento $z$ de $\bigcap x$, então $z$ pertence a todos os elementos de $x$, desse modo, teremos $z \in y$ e, novamente, $\bigcap x \subset y$. $\qed$
 		\end{description}
 	\item Dado $z\in\bigcap y$, temos que $z$ é elemento de qualquer $w\in y$. Como $x\subset y$, os elementos de $x$ são também elementos de  $y$, logo $z$ é elemento de qualquer $w\in x$ em particular, portanto $z\in\bigcap x$. Desta forma $\bigcap y\subset\bigcap x$.
 \end{enumerate}
@@ -175,10 +175,10 @@
 \begin{exercicio}
 	Prove que não existe $x$ tal que $\mathcal{P}(x)=x$.
 \end{exercicio}
-\begin{proof}[\textbf{Solução por Allan Kenedy}:]
+\begin{proof}[\textbf{Solução 1}:]
 	Se $\mathcal{P}(x)=x$, como $x\subset x$, então $x\in \mathcal{P}(x)$, contradizendo o Corolário 3.15.
 \end{proof}
-\begin{proof}[\textbf{Solução por Cloves Paiva}:]
+\begin{proof}[\textbf{Solução 2}:]
 	Suponha que $x$ seja um conjunto tal que $\mathcal{P}(x)=x$. Seja $y$ um elemento qualquer de $x$, então também teremos $y \subset x$, dado que assumimos $\mathcal{P}(x)=x$, e portanto $x \cap y \neq \emptyset$, o que é um absurdo pelo Axioma da Regularidade.
 \end{proof}
 
@@ -200,29 +200,23 @@
 \begin{enumerate}[label=(\alph{*})]
 	\item 
 		\begin{description}
-			\item[Solução por Allan Kenedy:] Tese: $\forall n((n\in\omega)\wedge(n\neq n^+))$.
+			\item[Solução 1:] Tese: $\forall n((n\in\omega)\wedge(n\neq n^+))$.
 	
 			Para $n=0$, $n^+\neq0$, pois $0$ não é sucessor de nenhum número natural, logo a tese é verdadeira para $n=0$.
 			
 			Suponha que a tese é verdadeira para algum $n\in\omega$. Pelo axioma 3, $n$ e $n^+$ devem ter sucessores distintos, isto é, $n^+\neq(n^+)^+$. Isto mostra que a tese é verdadeira para $n^+$. Pelo axioma 5, a tese é verdadeira para todo $n$ natural. $\qed$
-			\item[Solução por Cloves Paiva:] Usemos $\omega$ da definição 3.19 como modelo para $\mathbb{N}$. Pelo Teorema 3.20, $\omega$ satisfaz os Axiomas de Peano e, portanto, podemos aplicar o Princípio da Indução Finita. Por indução, verifiquemos que:
+			\item[Solução 2:] Usemos $\omega$ da definição 3.19 como modelo para $\mathbb{N}$. Pelo Teorema 3.20, $\omega$ satisfaz os Axiomas de Peano e, portanto, podemos aplicar o Princípio da Indução Finita. Por indução, verifiquemos que:
 				\begin{enumerate}
 					\item[\textbf{Caso Base}:] Pelo Axioma da Extensão temos que $\emptyset \neq (\emptyset \cup \{\emptyset\}) = \{\emptyset\} = \emptyset^+$.
 					\item[\textbf{Passo indutivo}:] Seja $x$ um elemento qualquer de $\omega$ e suponha que $x \neq x^+$, então: \newline \newline $(x^+)^+ = x^+ \cup \{x^+\}$ \newline $=  (x \cup \{x\}) \cup \{x^+\}$ \newline $= x \cup (\{x\} \cup \{x^+\})$ \newline $= x \cup \{x, x^+\} \neq x \cup \{x\} = x^+$ \newline \newline Com isso garantimos, pelo quinto Axioma de Peano, que todo número natural é diferente de seu sucessor. \cqd
 				\end{enumerate}
 		\end{description}
 	
-	\item Tese: $\forall n((n\in\omega)\wedge\nexists m((m\in\omega)\wedge(m^+=n))\to(n=0))$.
-	
-	Contrapositiva: $\forall n((n\neq0)\to((n\notin\omega)\vee\exists m((m\in\omega)\wedge(m^+=n))))$.
-	
-	Demonstraremos a contrapositiva, por ser equivalente à tese. Para isto precisaremos da seguinte proposição.
-	
-	\textbf{Proposição:} Seja $\sigma$ um subconjunto não vazio de $\omega$. Se $0\in\sigma$ e, para cada $n\in\sigma$, valer $n^+\in\sigma$, então $\sigma=\omega$.
-	
-	\textbf{Prova:} Aplicando o axioma 5 à fórmula $P(\sigma)=(x\in\sigma)$, obtemos $\omega\subset \sigma$. Como $\sigma\subset \omega$, então $\sigma=\omega$.\hfill$\blacksquare$
-	
-	Seja $\sigma=\{0\}\cup\{n\in\omega:\exists m((m\in\omega)\wedge(m^+=n))\}$. Temos que $0\in\sigma$ e, para cada $n\in\sigma$, $n^+\in\sigma$. Pela proposição acima, $\sigma=\omega$. Pelo axioma 4, $\{0\}\cap\{n\in\omega:\exists m((m\in\omega)\wedge(m^+=n))\}=\emptyset$. Portanto, para qualquer $n\in\omega$ com $n\neq0$, $\exists m((m\in\omega)\wedge(m^+=n))$. Isto demonstra, por contraposição, a tese.
+	\item  
+		\begin{description}
+			\item[Solução 1:] \textbf{Tese}: $\forall n((n\in\omega)\wedge\nexists m((m\in\omega)\wedge(m^+=n))\to(n=0))$. \newline \textbf{Contrapositiva}: $\forall n((n\neq0)\to((n\notin\omega)\vee\exists m((m\in\omega)\wedge(m^+=n))))$. \newline Demonstraremos a contrapositiva, por ser equivalente à tese. Para isto precisaremos da seguinte proposição. \newline \textbf{Proposição:} Seja $\sigma$ um subconjunto não vazio de $\omega$. Se $0\in\sigma$ e, para cada $n\in\sigma$, valer $n^+\in\sigma$, então $\sigma=\omega$. \newline \textbf{Prova:} Aplicando o axioma 5 à fórmula $P(\sigma)=(x\in\sigma)$, obtemos $\omega\subset \sigma$. Como $\sigma\subset \omega$, então $\sigma=\omega$. Seja $ \sigma=\{0\}\cup\{n\in\omega:\exists m((m\in\omega)\wedge(m^+=n))\} $. Temos que $ 0\in\sigma $ e, para cada $ n\in\sigma $, $ n^+\in\sigma $. Pela proposição acima, $ \sigma=\omega $. Pelo axioma 4, $ \{0\}\cap\{n\in\omega:\exists m((m\in\omega)\wedge(m^+=n))\}=\emptyset $. Portanto, para qualquer $ n\in\omega $ com $ n\neq0 $, $\exists m((m\in\omega)\wedge(m^+=n)) $. Isto demonstra, por contraposição, a tese.
+			\item[Solução 2:] Teste. $\cqd$
+		\end{description}
 \end{enumerate}
 
 
@@ -233,16 +227,16 @@
 		\item para todos $n,m\in\omega$, se $m\in n$, então $m\subset n$.
 	\end{enumerate}
 \end{exercicio}
-\begin{solucao}
-	\begin{enumerate}[label=(\alph{*})]
-		\item Para $n=0$, $n=\emptyset$, logo a tese é verdadeira.
-		
-		Suponha ser verdade para $n$. Se $\emptyset=n$, então $\emptyset\in n^+=n\cup\{n\}$. Se $\emptyset\in n$, então $\emptyset\in n^+$, e a tese é verdadeira para $n^+$
-		
-		Pelo axioma 5, $\emptyset\in n$ ou $\emptyset=n$ para qualquer $n\in\omega$.
-		\item Já feito na prova do Teorema 3.21, item (c).
-	\end{enumerate}
-\end{solucao}
+
+\begin{enumerate}[label=(\alph{*})]
+	\item Para $n=0$, $n=\emptyset$, logo a tese é verdadeira.
+	
+	Suponha ser verdade para $n$. Se $\emptyset=n$, então $\emptyset\in n^+=n\cup\{n\}$. Se $\emptyset\in n$, então $\emptyset\in n^+$, e a tese é verdadeira para $n^+$
+	
+	Pelo axioma 5, $\emptyset\in n$ ou $\emptyset=n$ para qualquer $n\in\omega$.
+	\item Já feito na prova do Teorema 3.21, item (c).
+\end{enumerate}
+
 
 \begin{exercicio}
 	A união de dois conjuntos indutivos é necessariamente um conjunto indutivo? Justifique sua resposta.
