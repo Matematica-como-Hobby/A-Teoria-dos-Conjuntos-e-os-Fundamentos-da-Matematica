@@ -214,19 +214,63 @@
 	
 	\item  
 	\begin{description}
-		\item[Solução 1:] \textbf{Tese:} \\
-		$\forall n((n\in\omega)\wedge\nexists m((m\in\omega)\wedge(m^+=n))\to(n=0))$. \\ \\
-		\textbf{Contrapositiva:} \\
-		$\forall n((n\neq0)\to((n\notin\omega)\vee\exists m((m\in\omega)\wedge(m^+=n))))$. \\ \\
-		Demonstraremos a contrapositiva, por ser equivalente à tese. Para isto precisaremos da seguinte proposição. \\ \\
-		\textbf{Proposição:} Seja $\sigma$ um subconjunto não vazio de $\omega$. Se $0\in\sigma$ e, para cada $n\in\sigma$, valer $n^+\in\sigma$, então $\sigma=\omega$.
-		\begin{proof}[\textbf{Prova}]
-			Aplicando o axioma 5 à fórmula $P(\sigma)=(x\in\sigma)$, obtemos $\omega\subset \sigma$. Como $\sigma\subset \omega$, então $\sigma=\omega$. Seja $ \sigma=\{0\}\cup\{n\in\omega:\exists m((m\in\omega)\wedge(m^+=n))\} $. Temos que $ 0\in\sigma $ e, para cada $ n\in\sigma $, $ n^+\in\sigma $. Pela proposição acima, $ \sigma=\omega $. Pelo axioma 4, $ \{0\}\cap\{n\in\omega:\exists m((m\in\omega)\wedge(m^+=n))\}=\emptyset $. Portanto, para qualquer $ n\in\omega $ com $ n\neq0 $, $\exists m((m\in\omega)\wedge(m^+=n)) $. Isto demonstra, por contraposição, a tese.
+		\item[Solução 1:] 
+		\begin{proof}[\textbf{Tese}:]
+			\[
+			\forall n \big((n \in \omega) \wedge \nexists m \big((m \in \omega) \wedge (m^+ = n)\big) \to (n = 0)\big).
+			\]
+			
+			\textbf{Contrapositiva:}  
+			\[
+			\forall n \big((n \neq 0) \to ((n \notin \omega) \vee \exists m \big((m \in \omega) \wedge (m^+ = n)\big))\big).
+			\]
+			
+			Demonstraremos a contrapositiva, por ser equivalente à tese. Para isso, precisaremos da seguinte proposição:
+			
+			\vspace{0.3cm}
+			\textbf{Proposição:} Seja $\sigma$ um subconjunto não vazio de $\omega$. Se $0 \in \sigma$ e, para cada $n \in \sigma$, valer $n^+ \in \sigma$, então $\sigma = \omega$.
+			
+			\vspace{0.3cm}
+			\textbf{Prova da Proposição:} Aplicando o axioma 5 à fórmula $P(\sigma) = (x \in \sigma)$, obtemos $\omega \subset \sigma$. Como $\sigma \subset \omega$, então $\sigma = \omega$.  
+			
+			Seja 
+			\[
+			\sigma = \{0\} \cup \{n \in \omega : \exists m ((m \in \omega) \wedge (m^+ = n))\}.
+			\]
+			Temos que $0 \in \sigma$ e, para cada $n \in \sigma$, $n^+ \in \sigma$. Pela proposição acima, $\sigma = \omega$.  
+			
+			Pelo axioma 4, 
+			\[
+			\{0\} \cap \{n \in \omega : \exists m ((m \in \omega) \wedge (m^+ = n))\} = \emptyset.
+			\]
+			Portanto, para qualquer $n \in \omega$ com $n \neq 0$,  
+			\[
+			\exists m ((m \in \omega) \wedge (m^+ = n)).
+			\]
+			Isto demonstra, por contraposição, a tese.
 		\end{proof}
-		
-		\item[Solução 2:]
-		Teste.
-	\end{description}	
+	
+		\item[Solução 2:] 
+		\begin{proof}[]
+			Seja $n$ um elemento de $\omega$ tal que $n \neq \emptyset$ e suponha que $n$ não é sucessor de nenhum outro número natural de $\omega$. Então, pelo Teorema 3.21, item $e$, temos os seguintes cenários:
+
+			\begin{enumerate}[label=\textit{\arabic*º}, left=0pt, itemsep=0.5em]
+				\item $\emptyset = n$: o que contradiz nossa hipótese.
+				\item $\emptyset \in n$: então, pelo item $b$ do Teorema 3.21, teremos os seguintes subcasos:
+				\begin{itemize}
+					\item $\emptyset^+ = n$: o que novamente contradiz nossa hipótese.
+					\item $\emptyset^+ \in n$: então $n$ existe graças a sucessivas aplicações da \textbf{Definição 3.16}, e há um 
+					\[
+					m = (\cdots((\emptyset^+)^+)^+\cdots)^+
+					\]
+					tal que $m^+ = n$, contrariando nossa hipótese.
+				\end{itemize}
+				\item $n \in \emptyset$: o que é um absurdo.
+			\end{enumerate}
+
+			Como esgotamos todos os cenários e, em todos eles, chegamos a uma contradição, não pode haver $n$, além de $\emptyset$, em $\omega$ que não seja sucessor de nenhum outro número natural.
+		\end{proof}
+	\end{description}
 	
 	
 \end{enumerate}
