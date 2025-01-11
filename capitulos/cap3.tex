@@ -92,7 +92,7 @@
 	Escreva uma fórmula de primeira ordem, na linguagem da teoria dos conjuntos, com quatro variáveis livres, que represente o conjunto $\{x,y,z\}$.
 \end{exercicio}
 \begin{solucao}
-	$\forall w ((w \in u) \implies ((w=x) \vee (w=y) \vee (w=z)))$
+	$\forall w ((w \in u) \iff ((w=x) \vee (w=y) \vee (w=z)))$
 \end{solucao}
 
 \begin{exercicio}
@@ -155,7 +155,11 @@
 	$$x\in\bigcup\bigcap(y\cup(w\backslash z)).$$
 \end{exercicio}
 \begin{solucao}
-	content
+	Vamos quebrar por partes:
+	\begin{enumerate}[label=\textit{\arabic*º}, left=0pt, itemsep=0.5em]
+		\item Podemos representar $w \setminus z$ como $\exists p \forall a ((a \in p) \iff ((a \in w) \implies (a \notin z)))$
+		\item Podemos representar $y \cup (w \setminus z)$ por $\exists q \forall b ((b \in q) \iff ((b \in y) \lor (b \in *)) )$, onde $*$ representa a fórmula do item anterior, por abuso de notação.
+	\end{enumerate}
 \end{solucao}
 
 \begin{exercicio}
