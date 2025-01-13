@@ -154,11 +154,19 @@
 	$$x\in\bigcup\bigcap(y\cup(w\backslash z)).$$
 \end{exercicio}
 \begin{solucao}
+<<<<<<< Updated upstream
 	Faremos por partes. Dizer que $x\in\bigcup a$ para algum conjunto $a$ significa que $\exists u((x\in u)\wedge(u\in a))$. Chame $a=\bigcap b$, sendo $b$ um conjunto não vazio. Então $x\in a\leftrightarrow\forall v((v\in b)\rightarrow(x\in v))$. Desta forma, $x\in \bigcup\bigcap b$ significa
 	$$\exists u((x\in u)\wedge\forall v((v\in b)\rightarrow(u\in v))).$$
 	Faça $b=y\cup c$. Então $x\in c\leftrightarrow(x\in y)\vee(x\in c)$. Assim
 	$$x\in \bigcup\bigcap (y\cup c)\leftrightarrow\exists u((x\in u)\wedge\forall v(((v\in y)\vee(v\in c))\rightarrow(u\in v))).$$
 	Por fim, faça $c=w\backslash z$. Então $x\in c\leftrightarrow(x\in w)\wedge\neg(x\in z)$. Portanto $x\in \bigcup\bigcap (y\cup(w\backslash z))$ significa
+=======
+	Faremos por partes. Dizer que $x\in\bigcup a$ para algum conjunto $a$ significa que $\exists u((x\in u)\wedge(u\in a))$. Chame $a=\bigcap b$, sendo $b$ um conjunto nÃ£o vazio. EntÃ£o $x\in a\leftrightarrow\forall v((v\in b)\rightarrow(x\in v))$. Desta forma, $x\in \bigcup\bigcap b$ significa
+	$$\exists u((x\in u)\wedge\forall v((v\in b)\rightarrow(u\in v))).$$
+	FaÃ§a $b=y\cup c$. EntÃ£o $x\in c\leftrightarrow(x\in y)\vee(x\in c)$. Assim
+	$$x\in \bigcup\bigcap (y\cup c)\leftrightarrow\exists u((x\in u)\wedge\forall v(((v\in y)\vee(v\in c))\rightarrow(u\in v))).$$
+	Por fim, faÃ§a $c=w\backslash z$. EntÃ£o $x\in c\leftrightarrow(x\in w)\wedge\neg(x\in z)$. Portanto $x\in \bigcup\bigcap (y\cup(w\backslash z))$ significa
+>>>>>>> Stashed changes
 	$$\exists u((x\in u)\wedge\forall v(((v\in y)\vee((v\in w)\wedge\neg(v\in z)))\rightarrow(u\in v))).$$
 \end{solucao}
 
