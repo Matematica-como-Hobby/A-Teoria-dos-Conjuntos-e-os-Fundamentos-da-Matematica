@@ -3,86 +3,89 @@
 \setcounter{ex}{0}
 
 \begin{exercicio}
-	Usando a linguagem de primeira ordem da teoria de conjuntos, escreva fÃ³rmulas para representar as seguintes frases.
+	Usando a linguagem de primeira ordem da teoria de conjuntos, escreva fórmulas para representar as seguintes frases.
+	\begin{enumerate}[label=(\alph{*})]
+		\item Não existe o conjunto de todos os conjuntos.
+		\item Existe um único conjunto vazio.
+		\item x é um conjunto unitário
+		\item Existe um conjunto que tem como elemento apenas o conjunto vazio
+		\item y é o conjunto dos subconjuntos de x 
+	\end{enumerate}
 \end{exercicio}
 
 \begin{solucao}
-\begin{enumerate}
-	\item[a)] NÃ£o existe o conjunto de todos os conjuntos.
-    \item[] $\neg \exists x \forall y (y \in x) \equiv \forall x \exists y (y \notin x)$
-	\item[b)] Existe um Ãºnico conjunto vazio.
-    \item[] $\exists ! x \forall y (y \notin x)$
-	\item[c)] x Ã© um conjunto unitÃ¡rio
-    \item[] $\exists ! y (y \in x)$
-	\item[d)] Existe um conjunto que tem como elemento apenas o conjunto vazio
-    \item[] $\exists x \forall y ((y \in x) \leftrightarrow y = \phi)$
-	\item[e)] y Ã© o conjunto dos subconjuntos de x 
-    \item[] $\forall z (z \in y \leftrightarrow \forall w (w \in z \to w \in x))$.
-    
-\end{enumerate}
-
+	\begin{enumerate}[label=(\alph{*})]
+		\item $\neg \exists x \forall y (y \in x)$ ou $\forall x \exists y (y \notin x)$.
+		\item $\exists ! x \forall y (y \notin x)$.
+		\item $\exists ! y (y \in x)$.
+		\item $\exists x \forall y ((y \in x) \leftrightarrow y = \phi)$.
+		\item $\forall z (z \in y \leftrightarrow \forall w (w \in z \to w \in x))$.
+	\end{enumerate}
 \end{solucao}
 
 \begin{exercicio}
-	Marque as ocorrÃªncias de variÃ¡veis livres nas fÃ³rmulas abaixo
+	Marque as ocorrências de variáveis livres nas fórmulas abaixo
 \end{exercicio}
-
-\begin{enumerate}
-	\item[a)] $(\forall x (x=y)) \rightarrow (x \in y ) $
-    \item[] $x$ e $y$
-	\item[b)] $ \forall x ((x=y) \rightarrow (x \in y))$
-    \item[] $y$
-	\item[c)] $\forall x(x=x) \rightarrow (\forall y \exists Z ((x=y) \land (y=z)) \rightarrow \neg(x\in y))$
-    \item[] $x$
-	\item[d)] $ \forall x \exists y(\neg(x=y) \land \forall z ((x \in y) \leftrightarrow \forall w ((w \in z ) \rightarrow (w \in x )))) $
-    \item[] NÃ£o hÃ¡ variÃ¡veis livres.
-	\item[e)] $(x=y)\rightarrow \exists (x=y) $
-    \item[] $x$ e $y$
+\begin{enumerate}[label=(\alph{*})]
+	\item $(\forall x (x=y)) \rightarrow (x \in y ) $
+	\item $ \forall x ((x=y) \rightarrow (x \in y))$
+	\item $\forall x(x=x) \rightarrow (\forall y \exists Z ((x=y) \land (y=z)) \rightarrow \neg(x\in y))$
+	\item $ \forall x \exists y(\neg(x=y) \land \forall z ((x \in y) \leftrightarrow \forall w ((w \in z ) \rightarrow (w \in x )))) $
+	\item $(x=y)\rightarrow \exists (x=y) $
 \end{enumerate}
 
+\begin{solucao}
+	\begin{enumerate}[label=(\alph{*})]
+    \item $x$ e $y$
+    \item $y$ 
+    \item $x$
+    \item Não há variáveis livres.
+    \item $x$ e $y$
+\end{enumerate}
+\end{solucao}
+
 \begin{exercicio}
-	Escreva as subfÃ³rmulas de cada fÃ³rmula do exercÃ­cio 2.
+	Escreva as subfórmulas de cada fórmula do exercício 2.
 \end{exercicio}
 
 \begin{solucao}
 
-\begin{enumerate}
+\begin{enumerate}[label=(\alph{*})]
 	\item 
-	\begin{enumerate}
+	\begin{itemize}
 		\item $(\forall x (x = y)) \rightarrow (x \in y)$
 		\item $(\forall x (x = y))$
 		\item $(x = y)$
 		\item $(x \in y)$
-	\end{enumerate}
+	\end{itemize}
 	
 	\item 
-	\begin{enumerate}
+	\begin{itemize}
 		\item $\forall x ((x = y) \rightarrow (x \in y))$
 		\item $(x = y) \rightarrow (x \in y)$
 		\item $(x = y)$
 		\item $(x \in y)$
-	\end{enumerate}
+	\end{itemize}
 	
 	\item 
-	\begin{enumerate}
+	\begin{itemize}
 		\item $\forall x (x = x) \rightarrow (\forall y \exists z (((x = y) \land (y = z)) \rightarrow \neg (x \in y)))$
 		\item $\forall x (x = x)$
-		\item $(x = y)$
+		\item $(x = x)$
 		\item $\forall z \exists y (((x = y) \land (y = z)) \rightarrow \neg (x \in y))$
 		\item $((x = y) \land (y = z))$
 		\item $(x = y)$
 		\item $(y = z)$
 		\item $\neg (x \in y)$
 		\item $(x \in y)$
-	\end{enumerate}
+	\end{itemize}
 	
 	\item 
-	\begin{enumerate}
+	\begin{itemize}
 		\item $(x = y) \rightarrow \exists y (x = y)$
 		\item $(x = y)$
 		\item $\exists y (x = y)$
-		\item $(x = y)$
-	\end{enumerate}
+	\end{itemize}
 \end{enumerate}
 
 \end{solucao}
