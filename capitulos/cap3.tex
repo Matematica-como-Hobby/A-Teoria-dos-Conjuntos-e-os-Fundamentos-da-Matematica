@@ -154,19 +154,11 @@
 	$$x\in\bigcup\bigcap(y\cup(w\backslash z)).$$
 \end{exercicio}
 \begin{solucao}
-<<<<<<< Updated upstream
 	Faremos por partes. Dizer que $x\in\bigcup a$ para algum conjunto $a$ significa que $\exists u((x\in u)\wedge(u\in a))$. Chame $a=\bigcap b$, sendo $b$ um conjunto não vazio. Então $x\in a\leftrightarrow\forall v((v\in b)\rightarrow(x\in v))$. Desta forma, $x\in \bigcup\bigcap b$ significa
 	$$\exists u((x\in u)\wedge\forall v((v\in b)\rightarrow(u\in v))).$$
 	Faça $b=y\cup c$. Então $x\in c\leftrightarrow(x\in y)\vee(x\in c)$. Assim
 	$$x\in \bigcup\bigcap (y\cup c)\leftrightarrow\exists u((x\in u)\wedge\forall v(((v\in y)\vee(v\in c))\rightarrow(u\in v))).$$
 	Por fim, faça $c=w\backslash z$. Então $x\in c\leftrightarrow(x\in w)\wedge\neg(x\in z)$. Portanto $x\in \bigcup\bigcap (y\cup(w\backslash z))$ significa
-=======
-	Faremos por partes. Dizer que $x\in\bigcup a$ para algum conjunto $a$ significa que $\exists u((x\in u)\wedge(u\in a))$. Chame $a=\bigcap b$, sendo $b$ um conjunto nÃ£o vazio. EntÃ£o $x\in a\leftrightarrow\forall v((v\in b)\rightarrow(x\in v))$. Desta forma, $x\in \bigcup\bigcap b$ significa
-	$$\exists u((x\in u)\wedge\forall v((v\in b)\rightarrow(u\in v))).$$
-	FaÃ§a $b=y\cup c$. EntÃ£o $x\in c\leftrightarrow(x\in y)\vee(x\in c)$. Assim
-	$$x\in \bigcup\bigcap (y\cup c)\leftrightarrow\exists u((x\in u)\wedge\forall v(((v\in y)\vee(v\in c))\rightarrow(u\in v))).$$
-	Por fim, faÃ§a $c=w\backslash z$. EntÃ£o $x\in c\leftrightarrow(x\in w)\wedge\neg(x\in z)$. Portanto $x\in \bigcup\bigcap (y\cup(w\backslash z))$ significa
->>>>>>> Stashed changes
 	$$\exists u((x\in u)\wedge\forall v(((v\in y)\vee((v\in w)\wedge\neg(v\in z)))\rightarrow(u\in v))).$$
 \end{solucao}
 
@@ -264,26 +256,26 @@
 			\exists m ((m \in \omega) \wedge (m^+ = n)).
 			\]
 			Isto demonstra, por contraposição, a tese.
-	 
-		\begin{solucao}[ 2]
-			Seja $n$ um elemento de $\omega$ tal que $n \neq \emptyset$ e suponha que $n$ não é sucessor de nenhum outro número natural de $\omega$. Então, pelo Teorema 3.21, item $e$, temos os seguintes cenários:
-
-			\begin{enumerate}[label=\textit{\arabic*º --}, left=0pt, itemsep=0.5em]
-				\item $\emptyset = n$: o que contradiz nossa hipótese.
-				\item $\emptyset \in n$: então, pelo item $b$ do Teorema 3.21, teremos os seguintes subcasos:
-				\begin{itemize}
-					\item $\emptyset^+ = n$: o que novamente contradiz nossa hipótese.
-					\item $\emptyset^+ \in n$: então $n$ existe graças a sucessivas aplicações\footnote{A ideia de aplicar uma mesma propriedade será formalizada no Capítulo 4 com o Teorema da Recursão.} da \textbf{Definição 3.16}, e há um 
-					\[
-					m = (\cdots((\emptyset^+)^+)^+\cdots)^+
-					\]
-					tal que $m^+ = n$, contrariando nossa hipótese.
-				\end{itemize}
-				\item $n \in \emptyset$: o que é um absurdo.
-			\end{enumerate}
-
-			Como esgotamos todos os cenários e, em todos eles, chegamos a uma contradição, não pode haver $n$, além de $\emptyset$, em $\omega$ que não seja sucessor de nenhum outro número natural.
-		\end{solucao}
+	\end{solucao}
+	
+	\begin{solucao}[ 2]
+		Seja $n$ um elemento de $\omega$ tal que $n \neq \emptyset$ e suponha que $n$ não é sucessor de nenhum outro número natural de $\omega$. Então, pelo Teorema 3.21, item $e$, temos os seguintes cenários:
+		
+		\begin{enumerate}[label=\textit{\arabic*º --}, left=0pt, itemsep=0.5em]
+			\item $\emptyset = n$: o que contradiz nossa hipótese.
+			\item $\emptyset \in n$: então, pelo item $b$ do Teorema 3.21, teremos os seguintes subcasos:
+			\begin{itemize}
+				\item $\emptyset^+ = n$: o que novamente contradiz nossa hipótese.
+				\item $\emptyset^+ \in n$: então $n$ existe graças a sucessivas aplicações\footnote{A ideia de aplicar uma mesma propriedade de forma sucessiva será formalizada no Capítulo 4 com o Teorema da Recursão.} da \textbf{Definição 3.16}, e há um 
+				\[
+				m = (\cdots((\emptyset^+)^+)^+\cdots)^+
+				\]
+				tal que $m^+ = n$, contrariando nossa hipótese.
+			\end{itemize}
+			\item $n \in \emptyset$: o que é um absurdo.
+		\end{enumerate}
+		
+		Como esgotamos todos os cenários e, em todos eles, chegamos a uma contradição, não pode haver $n$, além de $\emptyset$, em $\omega$ que não seja sucessor de nenhum outro número natural.
 	\end{solucao}
 \end{enumerate}
 
